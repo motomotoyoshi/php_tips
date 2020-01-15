@@ -38,3 +38,16 @@ foreach($items as $item) {
 }
 
 var_dump(json_encode($array));
+
+// [
+//     {
+//         "id":"item1",
+//         "key1":"value1",
+//         "key2":"value2"
+//     },
+//     {
+//         "id":"item2",
+//         "key1":"value3",
+//         "key2":"value4"
+//     }
+// ]
