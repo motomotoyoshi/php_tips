@@ -2,9 +2,8 @@
     // URLパラメータにエラー項目があったらJSでアラートを出力
     if (isset($_GET['err'])) {
         $msgs = "";
-        parse_str(parse_url($_SERVER['REQUEST_URI'])['query'], $err_content);
 
-        foreach (explode("-", $err_content['err']) as $msg) {
+        foreach (explode("-", $_GET['err']) as $msg) {
             $msg = "「".$msg."」";
             $msgs .= $msg;
         }
