@@ -15,7 +15,7 @@
     if(!empty($err_item)) {
         $err_to_params = implode("-", $err_item);
         if (isset($err_item)) {
-            header("Location: http://localhost:3000/index.php?err={$err_to_params}");
+            header("Location: {$_SERVER['HTTP_ORIGIN']}/index.php?err={$err_to_params}");
             exit;
         }
     }
