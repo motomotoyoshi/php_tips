@@ -8,11 +8,11 @@
             $msgs .= $msg;
         }
 
-        $alert_msg = '
+        $alert_msg = <<< EOM
                 <script type="text/javascript">
-                    alert("以下の項目を入力してください\n'.$msgs.'");
+                    alert("以下の項目を入力してください\\n$msgs");
                 </script>
-                ';
+                EOM;
         echo ($alert_msg);
     }
 ?>
